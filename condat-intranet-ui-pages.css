@@ -1,0 +1,59 @@
+/* ============================================================
+   Seiten-spezifische Layouts — jeweils mit Seiten-Kürzel im
+   Klassennamen (z. B. "lb" = Leitbild), damit sie nicht mit
+   gleichnamigen Layouts anderer Seiten kollidieren. Wächst mit
+   jeder neuen Seite; das ist gewollt (siehe Begründung im Skill:
+   die Datei wird einmal gecacht, Größe spielt praktisch keine
+   Rolle mehr — der Code-Modul-Ansatz pro Seite entfällt dadurch
+   komplett). */
+
+/* ---------- Leitbild ---------- */
+.ci-wrap .ci-lb-lede{color:var(--ci-grey);font-size:15.5px;max-width:720px;margin-bottom:26px}
+
+.ci-wrap .ci-lb-vision-intro{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;margin:18px 0 20px}
+.ci-wrap .ci-lb-vision-intro .ci-statement{margin:0;max-width:none;padding:32px 70px 28px 36px}
+.ci-wrap .ci-lb-vision-intro .ci-lb-lede{margin:0;max-width:none}
+@media(max-width:860px){
+  .ci-wrap .ci-lb-vision-intro{grid-template-columns:1fr;gap:18px}
+}
+
+.ci-wrap .ci-statement{position:relative}
+.ci-wrap .ci-statement .ci-lb-quote-icon{position:absolute;top:10px;right:22px}
+@media(max-width:600px){
+  .ci-wrap .ci-statement .ci-lb-quote-icon{width:40px;height:40px}
+}
+
+.ci-wrap .ci-lb-vision-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.ci-wrap .ci-lb-vision-cols p{margin:0;font-size:15px}
+@media(max-width:860px){
+  .ci-wrap .ci-lb-vision-cols{grid-template-columns:1fr;gap:22px}
+}
+
+.ci-wrap .ci-lb-industry-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0}
+.ci-wrap .ci-lb-industry-card{border-radius:14px;padding:34px 24px;text-align:center;color:var(--ci-ink)}
+.ci-wrap .ci-lb-industry-card h4{font-size:19px;font-weight:800;margin:10px 0}
+.ci-wrap .ci-lb-industry-card p{font-size:14px;margin:0 auto;max-width:220px}
+.ci-wrap .ci-lb-industry-card.ci-lb-health{background:var(--ci-teal)}
+.ci-wrap .ci-lb-industry-card.ci-lb-media{background:#F84C6B}
+.ci-wrap .ci-lb-industry-card.ci-lb-public{background:var(--ci-indigo)}
+@media(max-width:860px){
+  .ci-wrap .ci-lb-industry-cards{grid-template-columns:1fr}
+}
+
+.ci-wrap .ci-lb-values-frame{border:1px solid var(--ci-line);border-radius:16px;overflow:hidden;background:#fff;margin:18px 0}
+.ci-wrap .ci-lb-value-edge{padding:22px 26px}
+.ci-wrap .ci-lb-value-edge .ci-icon-badge{margin-bottom:10px}
+.ci-wrap .ci-lb-values-middle{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  border-top:1px solid var(--ci-line);border-bottom:1px solid var(--ci-line);
+  background:#fbfdff;
+}
+.ci-wrap .ci-lb-value-mid{padding:20px 20px;text-align:left}
+.ci-wrap .ci-lb-value-mid:not(:last-child){border-right:1px solid var(--ci-line)}
+@media(max-width:860px){
+  .ci-wrap .ci-lb-values-middle{grid-template-columns:1fr}
+  .ci-wrap .ci-lb-value-mid:not(:last-child){border-right:none;border-bottom:1px solid var(--ci-line)}
+}
+@media(max-width:600px){
+  .ci-wrap .ci-lb-value-edge,.ci-wrap .ci-lb-value-mid{padding:18px 18px}
+}
