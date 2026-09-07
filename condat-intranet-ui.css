@@ -26,6 +26,8 @@
   --ci-grey:#5c6470;
   --ci-line:#e3e9f2;
   --ci-bg:#f7f9fc;
+  --ci-err:#dc2626;
+  --ci-ok:#16a34a;
 }
 
 /* ---------- Basis-Typografie (nur innerhalb .ci-wrap) ---------- */
@@ -202,3 +204,55 @@
 .ci-icon-robot{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIiBmaWxsPSIjZmZmZmZmIj48cGF0aCBkPSJNMzIwIDBjMTcuNyAwIDMyIDE0LjMgMzIgMzJWOTZINDcyYzM5LjggMCA3MiAzMi4yIDcyIDcyVjQ0MGMwIDM5LjgtMzIuMiA3Mi03MiA3MkgxNjhjLTM5LjggMC03Mi0zMi4yLTcyLTcyVjE2OGMwLTM5LjggMzIuMi03MiA3Mi03MkgyODhWMzJjMC0xNy43IDE0LjMtMzIgMzItMzJ6TTIwOCAzODRjLTguOCAwLTE2IDcuMi0xNiAxNnM3LjIgMTYgMTYgMTZoMzJjOC44IDAgMTYtNy4yIDE2LTE2cy03LjItMTYtMTYtMTZIMjA4em05NiAwYy04LjggMC0xNiA3LjItMTYgMTZzNy4yIDE2IDE2IDE2aDMyYzguOCAwIDE2LTcuMiAxNi0xNnMtNy4yLTE2LTE2LTE2SDMwNHptOTYgMGMtOC44IDAtMTYgNy4yLTE2IDE2czcuMiAxNiAxNiAxNmgzMmM4LjggMCAxNi03LjIgMTYtMTZzLTcuMi0xNi0xNi0xNkg0MDB6TTI2NCAyNTZhNDAgNDAgMCAxIDAgLTgwIDAgNDAgNDAgMCAxIDAgODAgMHptMTUyIDQwYTQwIDQwIDAgMSAwIDAtODAgNDAgNDAgMCAxIDAgMCA4MHpNNDggMjI0SDY0VjQxNkg0OGMtMjYuNSAwLTQ4LTIxLjUtNDgtNDhWMjcyYzAtMjYuNSAyMS41LTQ4IDQ4LTQ4em01NDQgMGMyNi41IDAgNDggMjEuNSA0OCA0OHY5NmMwIDI2LjUtMjEuNSA0OC00OCA0OEg1NzZWMjI0aDE2eiIvPjwvc3ZnPg==")}
 .ci-icon-layer-group-blue{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NzYgNTEyIiBmaWxsPSIjMDI1N2JkIj48cGF0aCBkPSJNMjY0LjUgNS4yYzE0LjktNi45IDMyLjEtNi45IDQ3IDBsMjE4LjYgMTAxYzguNSAzLjkgMTMuOSAxMi40IDEzLjkgMjEuOHMtNS40IDE3LjktMTMuOSAyMS44bC0yMTguNiAxMDFjLTE0LjkgNi45LTMyLjEgNi45LTQ3IDBMNDUuOSAxNDkuOEMzNy40IDE0NS44IDMyIDEzNy4zIDMyIDEyOHM1LjQtMTcuOSAxMy45LTIxLjhMMjY0LjUgNS4yek00NzYuOSAyMDkuNmw1My4yIDI0LjZjOC41IDMuOSAxMy45IDEyLjQgMTMuOSAyMS44cy01LjQgMTcuOS0xMy45IDIxLjhsLTIxOC42IDEwMWMtMTQuOSA2LjktMzIuMSA2LjktNDcgMEw0NS45IDI3Ny44QzM3LjQgMjczLjggMzIgMjY1LjMgMzIgMjU2czUuNC0xNy45IDEzLjktMjEuOGw1My4yLTI0LjYgMTUyIDcwLjJjMjMuNCAxMC44IDUwLjQgMTAuOCA3My44IDBsMTUyLTcwLjJ6bS0xNTIgMTk4LjJsMTUyLTcwLjIgNTMuMiAyNC42YzguNSAzLjkgMTMuOSAxMi40IDEzLjkgMjEuOHMtNS40IDE3LjktMTMuOSAyMS44bC0yMTguNiAxMDFjLTE0LjkgNi45LTMyLjEgNi45LTQ3IDBMNDUuOSA0MDUuOEMzNy40IDQwMS44IDMyIDM5My4zIDMyIDM4NHM1LjQtMTcuOSAxMy45LTIxLjhsNTMuMi0yNC42IDE1MiA3MC4yYzIzLjQgMTAuOCA1MC40IDEwLjggNzMuOCAweiIvPjwvc3ZnPg==")}
 .ci-icon-robot-blue{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIiBmaWxsPSIjMDI1N2JkIj48cGF0aCBkPSJNMzIwIDBjMTcuNyAwIDMyIDE0LjMgMzIgMzJWOTZINDcyYzM5LjggMCA3MiAzMi4yIDcyIDcyVjQ0MGMwIDM5LjgtMzIuMiA3Mi03MiA3MkgxNjhjLTM5LjggMC03Mi0zMi4yLTcyLTcyVjE2OGMwLTM5LjggMzIuMi03MiA3Mi03MkgyODhWMzJjMC0xNy43IDE0LjMtMzIgMzItMzJ6TTIwOCAzODRjLTguOCAwLTE2IDcuMi0xNiAxNnM3LjIgMTYgMTYgMTZoMzJjOC44IDAgMTYtNy4yIDE2LTE2cy03LjItMTYtMTYtMTZIMjA4em05NiAwYy04LjggMC0xNiA3LjItMTYgMTZzNy4yIDE2IDE2IDE2aDMyYzguOCAwIDE2LTcuMiAxNi0xNnMtNy4yLTE2LTE2LTE2SDMwNHptOTYgMGMtOC44IDAtMTYgNy4yLTE2IDE2czcuMiAxNiAxNiAxNmgzMmM4LjggMCAxNi03LjIgMTYtMTZzLTcuMi0xNi0xNi0xNkg0MDB6TTI2NCAyNTZhNDAgNDAgMCAxIDAgLTgwIDAgNDAgNDAgMCAxIDAgODAgMHptMTUyIDQwYTQwIDQwIDAgMSAwIDAtODAgNDAgNDAgMCAxIDAgMCA4MHpNNDggMjI0SDY0VjQxNkg0OGMtMjYuNSAwLTQ4LTIxLjUtNDgtNDhWMjcyYzAtMjYuNSAyMS41LTQ4IDQ4LTQ4em01NDQgMGMyNi41IDAgNDggMjEuNSA0OCA0OHY5NmMwIDI2LjUtMjEuNSA0OC00OCA0OEg1NzZWMjI0aDE2eiIvPjwvc3ZnPg==")}
+.ci-icon-plane{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NzYgNTEyIiBmaWxsPSIjZmZmZmZmIj48cGF0aCBkPSJNNDgyLjMgMTkyYzM0LjIgMCA5My43IDI5IDkzLjcgNjRjMCAzNi01OS41IDY0LTkzLjcgNjRsLTExNi42IDBMMjY1LjIgNDk1LjljLTUuNyAxMC0xNi4zIDE2LjEtMjcuOCAxNi4xbC01Ni4yIDBjLTEwLjYgMC0xOC4zLTEwLjItMTUuNC0yMC40bDQ5LTE3MS42TDExMiAzMjAgNjguOCAzNzcuNmMtMyA0LTcuOCA2LjQtMTIuOCA2LjRsLTQyIDBjLTcuOCAwLTE0LTYuMy0xNC0xNGMwLTEuMyAuMi0yLjYgLjUtMy45TDMyIDI1NiAuNSAxNDUuOWMtLjQtMS4zLS41LTIuNi0uNS0zLjljMC03LjggNi4zLTE0IDE0LTE0bDQyIDBjNSAwIDkuOCAyLjQgMTIuOCA2LjRMMTEyIDE5MmwxMDIuOSAwLTQ5LTE3MS42QzE2Mi45IDEwLjIgMTcwLjYgMCAxODEuMiAwbDU2LjIgMGMxMS41IDAgMjIuMSA2LjIgMjcuOCAxNi4xTDM2NS43IDE5MmwxMTYuNiAweiIvPjwvc3ZnPg==")}
+
+/* ---------- Formulare (z. B. Reise beantragen, Zwischenzeugnis anfordern) ----------
+   Generisches, wiederverwendbares Muster für Formular-Seiten mit
+   Live-Vorschau: Zwei-Spalten-Grid (Formular + sticky Vorschau),
+   Eingabefelder, aufklappbare Buchungsbausteine (Toggle+Sub),
+   Aktions-Buttons, Fehler-/Erfolgs-Meldung, Mail-Vorschau-Box. */
+.ci-form-grid{display:grid;grid-template-columns:1fr 400px;gap:28px;align-items:start}
+@media(max-width:900px){.ci-form-grid{grid-template-columns:1fr}}
+
+.ci-form-section{margin-top:26px}
+.ci-form-section:first-of-type{margin-top:0}
+.ci-form-section > .ci-lbl{font-weight:600;font-size:14px;margin-bottom:8px;display:block}
+.ci-hint{color:var(--ci-grey);font-size:12.5px;margin:2px 0 10px}
+.ci-field{display:block;margin-bottom:16px}
+.ci-field .ci-lbl{font-weight:600;font-size:14px;display:block;margin-bottom:6px}
+.ci-req{color:var(--ci-blue);font-weight:700}
+
+.ci-two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:520px){.ci-two{grid-template-columns:1fr}}
+
+.ci-check-inline{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--ci-grey)}
+.ci-check-inline input{width:16px;height:16px;accent-color:var(--ci-blue);cursor:pointer}
+.ci-check-inline label{cursor:pointer}
+
+.ci-toggle{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--ci-line);border-radius:8px;margin-bottom:8px;cursor:pointer;font-weight:600;font-size:14px;background:#fff;transition:border-color .15s,background .15s}
+.ci-toggle input[type=checkbox]{width:18px;height:18px;accent-color:var(--ci-blue);cursor:pointer}
+.ci-toggle:has(input:checked){border-color:var(--ci-blue);background:rgba(2,107,231,.05)}
+.ci-toggle:has(+ .ci-sub.ci-show){margin-bottom:0;border-radius:8px 8px 0 0}
+.ci-toggle + .ci-sub{display:none;padding:16px 16px 4px;margin:0 0 14px;border:1px solid var(--ci-line);border-top:none;border-radius:0 0 8px 8px;background:#fbfcfe}
+.ci-toggle + .ci-sub.ci-show{display:block;animation:ci-sub-in .15s ease}
+@keyframes ci-sub-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.ci-policy{font-size:12px;color:var(--ci-grey);margin:6px 0 0}
+
+.ci-wrap input[type=text],.ci-wrap input[type=email],.ci-wrap input[type=date],.ci-wrap select,.ci-wrap textarea{
+  width:100%;font:inherit;padding:10px 12px;border:1px solid var(--ci-line);border-radius:8px;background:#fff;color:var(--ci-ink);transition:border-color .15s,box-shadow .15s;
+}
+.ci-wrap input:focus,.ci-wrap select:focus,.ci-wrap textarea:focus{outline:none;border-color:var(--ci-blue);box-shadow:0 0 0 3px rgba(2,107,231,.15)}
+.ci-wrap textarea{resize:vertical;min-height:70px}
+
+.ci-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.ci-err-msg{color:var(--ci-err);font-size:13px;margin-top:12px;display:none}
+.ci-err-msg.ci-show{display:block}
+.ci-copied{color:var(--ci-ok);font-size:13px;margin-top:12px;display:none}
+.ci-copied.ci-show{display:block}
+
+.ci-preview{position:sticky;top:20px}
+.ci-preview .ci-meta{font-size:12px;color:var(--ci-grey);margin-bottom:12px}
+.ci-preview .ci-meta b,.ci-preview .ci-meta strong{color:var(--ci-ink)}
+.ci-mailbox{background:#fbfcfe;border:1px solid var(--ci-line);border-radius:8px;padding:16px;font-size:13px;white-space:pre-wrap;word-break:break-word;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;max-height:520px;overflow:auto;color:#1f2937}
+.ci-note{font-size:12px;color:var(--ci-grey);margin-top:16px;line-height:1.5}
+.ci-note b,.ci-note strong{color:var(--ci-ink)}
