@@ -16,6 +16,9 @@
 @media(max-width:860px){
   .ci-wrap .ci-lb-vision-intro{grid-template-columns:1fr;gap:18px}
 }
+@media(max-width:600px){
+  .ci-wrap .ci-lb-vision-intro .ci-statement{padding:22px 20px 20px}
+}
 
 .ci-wrap .ci-statement{position:relative}
 .ci-wrap .ci-statement .ci-lb-quote-icon{position:absolute;top:10px;right:22px}
@@ -56,4 +59,38 @@
 }
 @media(max-width:600px){
   .ci-wrap .ci-lb-value-edge,.ci-wrap .ci-lb-value-mid{padding:18px 18px}
+}
+
+/* ---------- Strategie bis 2028 ---------- */
+.ci-wrap .ci-str-planken{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 6px}
+.ci-wrap .ci-str-planke{background:#fff;border:1px solid var(--ci-line);border-radius:14px;padding:18px 20px}
+.ci-wrap .ci-str-icon{width:38px;height:38px;border-radius:50%;background:var(--ci-card);display:grid;place-items:center;margin-bottom:10px}
+.ci-wrap .ci-str-planke h3{font-size:15.5px}
+.ci-wrap .ci-str-planke p{font-size:13.5px;color:var(--ci-grey);margin:0}
+
+/* Custom Akkordeon-Summary-Layout dieser Seite: Kreis-Nummer + Titel +
+   rotierender Pfeil statt des globalen +/--Standard-Togglers */
+.ci-wrap .ci-chapter summary{gap:12px}
+.ci-wrap .ci-chapter summary::after{content:none}
+.ci-wrap .ci-str-qnum{width:30px;height:30px;border-radius:50%;background:var(--ci-card);color:var(--ci-blue-dark);display:grid;place-items:center;font-size:13px;font-weight:800;flex-shrink:0}
+.ci-wrap .ci-str-qtitle{flex:1}
+.ci-wrap .ci-str-qtoggle{font-size:20px;font-weight:400;color:var(--ci-blue);flex-shrink:0;display:inline-block}
+.ci-wrap .ci-chapter[open] summary .ci-str-qtoggle{transform:rotate(180deg)}
+.ci-wrap .ci-chapter summary:hover .ci-str-qtitle{color:var(--ci-blue)}
+.ci-wrap .ci-str-paten{font-size:12.5px;color:var(--ci-grey);font-style:italic;margin:-4px 0 10px}
+.ci-wrap .ci-str-kpi{margin-top:6px}
+
+.ci-wrap .ci-str-timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
+.ci-wrap .ci-str-tl{border-top:4px solid var(--ci-blue);padding-top:10px}
+.ci-wrap .ci-str-tl:nth-child(2){border-top-color:var(--ci-teal)}
+.ci-wrap .ci-str-tl:nth-child(3){border-top-color:var(--ci-indigo)}
+.ci-wrap .ci-str-tl b{font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ci-grey)}
+.ci-wrap .ci-str-tl h4{font-size:14.5px;font-weight:700;margin:4px 0 4px}
+.ci-wrap .ci-str-tl p{font-size:12.5px;color:var(--ci-grey);margin:0}
+
+.ci-wrap .ci-str-crosslink{display:flex;align-items:center;gap:12px;background:var(--ci-card);border-radius:12px;padding:14px 18px;margin:20px 0}
+.ci-wrap .ci-str-crosslink a{font-weight:700}
+
+@media(max-width:860px){
+  .ci-wrap .ci-str-planken,.ci-wrap .ci-str-timeline{grid-template-columns:1fr}
 }
