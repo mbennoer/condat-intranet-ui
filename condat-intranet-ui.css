@@ -119,7 +119,7 @@
 .ci-icon-64{width:64px;height:64px}
 
 /* ---------- Pills ---------- */
-.ci-pill{display:inline-block;font-size:11px;font-weight:700;border-radius:6px;padding:3px 9px;background:var(--ci-card);color:var(--ci-blue-dark)}
+.ci-pill{display:inline-block;font-size:11px;font-weight:700;border-radius:6px;padding:3px 9px;margin:2px 4px 2px 0;background:var(--ci-card);color:var(--ci-blue-dark)}
 .ci-pill.ci-gold{background:#fff2cc;color:#8a6400}
 .ci-pill.ci-ist{background:rgba(34,181,115,.14);color:#0a8f4d}
 .ci-pill.ci-teilweise{background:#fff2cc;color:#8a6400}
@@ -128,7 +128,11 @@
 
 /* ---------- Statement (hervorgehobenes Zitat) ---------- */
 .ci-statement{position:relative;background:#fff;border:1px solid var(--ci-line);border-left:6px solid var(--ci-blue);border-radius:14px;padding:24px 28px;margin:14px 0}
-.ci-statement p{font-size:18px;font-weight:750;line-height:1.4;margin:0;color:var(--ci-ink)}
+.ci-statement p{position:relative;margin:0;max-width:640px;font-size:28px;font-weight:800;line-height:1.3;letter-spacing:-.015em;color:var(--ci-ink)}
+@media(max-width:600px){
+  .ci-statement{padding:22px 20px 20px}
+  .ci-statement p{font-size:19px}
+}
 .ci-statement span{display:block;font-size:12.5px;font-weight:700;color:var(--ci-grey);margin-top:10px;text-transform:uppercase;letter-spacing:.04em}
 
 /* ---------- Hinweisbox ---------- */
