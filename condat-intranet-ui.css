@@ -137,7 +137,7 @@
 
 /* ---------- Hinweisbox ---------- */
 .ci-offen{border-left:4px solid var(--ci-yellow);background:#fffaf0;border-radius:0 12px 12px 0;padding:14px 18px;margin:20px 0;font-size:13.5px}
-.ci-offen b{display:block;margin-bottom:4px}
+.ci-offen b,.ci-offen strong{display:block;margin-bottom:4px}
 
 /* ---------- Linkbox ---------- */
 .ci-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin:12px 0}
